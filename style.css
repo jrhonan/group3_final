@@ -1,7 +1,8 @@
-/*
+*
 This is a good layout for a mobile-first CSS template.
 Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
 Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
 Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
 You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
 */
@@ -31,4 +32,282 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #FFFFFF;
 }
+
+body {
+    background-color: #A9E7BF;
+}
+
+
+/** RESPONSIVE IMAGES */
+
+figure,
+img {
+    /* Sets image width to match parent */
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.copy {
+    background-color: #FFF;
+}
+
+.container.textbox {
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.byline {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #A9E7BF;
+}
+
+header {
+    margin-bottom: 16px;
+}
+
+header p {
+    margin: 0;
+}
+
+.collage {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.collage .img {
+    flex-basis: 50%;
+    padding: 2.5px;
+}
+
+.collage .img:nth-child(odd) {
+    padding-left: 0;
+}
+
+.collage .img:nth-child(even) {
+    padding-right: 0;
+}
+
+
+/** Caption styles */
+
+.caption,
+figcaption {
+    font-size: 0.9rem;
+    color: #8e8a8a;
+    padding: 5px 0;
+}
+
+.image-bg-black {
+    background-color: #000;
+}
+
+.image-bg-black p.caption {
+    background-color: transparent;
+    color: #fff;
+}
+
+.image-bg-black .container.image p.caption {
+    padding: 5px 10px 15px;
+}
+
+
+/** BASE CLASSES */
+
+.annotate {
+    position: relative;
+}
+
+.annotate .dot {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.annotate .dot .inner {
+    position: absolute;
+    opacity: 0;
+    padding: 25px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.annotate .dot .close {
+    position: absolute;
+    color: #FFF;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.annotate .dot.green {
+    background-color: rgba(0, 110, 65, 0.65);
+}
+
+.annotate .dot.purple {
+    background-color: rgba(74, 2, 242, 0.65);
+}
+
+.annotate .dot.red {
+    background-color: rgba(230, 11, 65, 0.65);
+}
+
+.annotate .dot.blue {
+    background-color: rgba(11, 18, 230, 0.65);
+}
+
+.annotate .dot.pink {
+    background-color: rgba(240, 12, 182, 0.65);
+}
+
+.annotate .dot.active {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    border: 0;
+    z-index: 2;
+}
+
+.annotate .dot.active .inner,
+.annotate .dot.active .close {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#knob:not(.active) {
+    top: 50%;
+    left: 4%;
+}
+
+#strings:not(.active) {
+    bottom: 8%;
+    left: 28%;
+}
+
+#mallet:not(.active) {
+    bottom: 23%;
+    left: 32%;
+}
+
+#Adam:not(.active) {
+    bottom: 55%;
+    right: 16%;
+}
+
+#tuning:not(.active) {
+    bottom: 10%;
+    right: 80%;
+}
+
+
+/** Container styles to keep content from becoming too wide or coming too close to
+* mobile edge */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/** Images are allowed to be a little wider when broken out into their own container */
+
+.container.image {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 681px) {
+    #tuning:not(.active) {
+        bottom: 11%;
+        right: 80%;
+    }
+    #strings:not(.active) {
+        bottom: 4%;
+        left: 37%;
+    }
+    #Adam:not(.active) {
+        bottom: 57%;
+        right: 18%;
+    }
+    #knob:not(.active) {
+        top: 52%;
+        left: 7%;
+    }
+    #mallet:not(.active) {
+        bottom: 26%;
+        left: 33%;
+    }
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 769px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+}
+
+
+/*********************************************************************
+  YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 805px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container {
+        padding: 0;
+    }
+}
+
+
+/*********************************************************************
+  YOUR LARGE DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 1205px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container.image .caption,
+    .container.image figcaption {
+        padding: 5px 0;
+    }
+}
+
