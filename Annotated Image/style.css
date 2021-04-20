@@ -1,0 +1,184 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    background-color: #F7F8F8;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border: 2px solid;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.container.photo {
+    max-width: 1000px;
+    padding: 5px;
+}
+
+.collage {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.collage .img {
+    flex-basis: 50%;
+    padding: 2.5px;
+}
+
+.collage .img:nth-child(odd) {
+    padding-left: 0;
+}
+
+.collage .img:nth-child(even) {
+    padding-right: 0;
+}
+
+.annotate {
+    position: relative;
+}
+
+.annotate .dot {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.annotate .dot .inner {
+    position: absolute;
+    opacity: 0;
+    padding: 25px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.annotate .dot .close {
+    position: absolute;
+    color: #FFF;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.annotate .dot.red {
+    background-color: rgba(230, 11, 65, 0.65);
+}
+
+.annotate .dot.pink {
+    background-color: rgba(240, 12, 182, 0.65);
+}
+
+.annotate .dot.purple {
+    background-color: rgba(74, 2, 242, 0.65);
+}
+
+.annotate .dot.blue {
+    background-color: rgba(11, 18, 230, 0.65);
+}
+
+.annotate .dot.active {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    border: 0;
+    z-index: 2;
+}
+
+.annotate .dot.active .close,
+.annotate .dot.active .inner {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#firstcheckpoint:not(.active) {
+    top: 27%;
+    right: 62%;
+}
+
+#secondcheckpoint:not(.active) {
+    top: 30%;
+    left: 60%;
+}
+
+#thirdcheckpoint:not(.active) {
+    bottom: 20%;
+    right: 68%;
+}
+
+#fourthcheckpoint:not(.active) {
+    bottom: 17%;
+    left: 77%;
+}
+
+.sources {
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    #firstcheckpoint:not(.active) {
+        top: 37%;
+        right: 62%;
+    }
+
+    #secondcheckpoint:not(.active) {
+        top: 28%;
+        left: 55%;
+    }
+
+    #thirdcheckpoint:not(.active) {
+        bottom: 21%;
+        right: 76%;
+    }
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
