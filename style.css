@@ -32,12 +32,11 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    font-family: 'Oxygen', sans-serif;
-    background-color: #FFFFFF;
+    font-family: 'Antonio', sans-serif;
 }
 
 body {
-    background-color: #A9E7BF;
+    background-color: #E8FCFC;
 }
 
 
@@ -55,10 +54,6 @@ p {
     line-height: 1.5em;
 }
 
-.copy {
-    background-color: #FFF;
-}
-
 .container.textbox {
     background-color: #FFF;
     padding: 10px;
@@ -70,7 +65,7 @@ p {
     max-width: 800px;
     padding: 10px;
     margin: 0 auto;
-    background-color: #A9E7BF;
+    background-color: #E8FCFC;
 }
 
 header {
@@ -107,18 +102,11 @@ header p {
 .caption,
 figcaption {
     font-size: 0.9rem;
-    color: #8e8a8a;
+    color: #050505;
     padding: 5px 0;
 }
 
-.image-bg-black p.caption {
-    background-color: transparent;
-    color: #fff;
-}
 
-.image-bg-black .container.image p.caption {
-    padding: 5px 10px 15px;
-}
 
 
 /** BASE CLASSES */
