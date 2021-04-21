@@ -47,7 +47,7 @@ figure,
 img {
     /* Sets image width to match parent */
     width: 100%;
-    display: block;
+
     margin: 0 auto;
 }
 
@@ -90,13 +90,14 @@ header p {
 .collage .img {
     flex-basis: 50%;
     padding: 2.5px;
+    box-sizing: border-box;
 }
 
-.collage .img:nth-child(odd) {
+.collage .images:nth-child(odd) {
     padding-left: 0;
 }
 
-.collage .img:nth-child(even) {
+.collage .images:nth-child(even) {
     padding-right: 0;
 }
 
@@ -108,10 +109,6 @@ figcaption {
     font-size: 0.9rem;
     color: #8e8a8a;
     padding: 5px 0;
-}
-
-.image-bg-black {
-    background-color: #000;
 }
 
 .image-bg-black p.caption {
@@ -310,4 +307,3 @@ figcaption {
         padding: 5px 0;
     }
 }
-
