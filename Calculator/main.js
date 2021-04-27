@@ -13,5 +13,4 @@ function item_input_listener(e) {
 	const row = this_input.closest(".row");
 
 	row.classList.add("active");
-	calculate_totals();
 }
