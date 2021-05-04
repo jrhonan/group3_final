@@ -24,6 +24,11 @@ body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: 'Antonio', sans-serif;
+}
+
+body {
+    background-color: #F2FFEA;
 }
 
 a {
@@ -41,7 +46,6 @@ img {
 }
 
 .calc-container {
-    background-color: #f8f8f8;
     padding: 22px 0;
 }
 
@@ -59,7 +63,7 @@ img {
 
 .calculator .row {
     margin-bottom: 20px;
-    flex-basis: 100%;
+    flex-basis: 50%;
     flex: 1;
 }
 
@@ -71,13 +75,45 @@ img {
     max-width: 160px;
 }
 
-.row .total {
+.total {
     margin: 5px 0;
     display: none;
 }
 
-.row.active .total {
+.active .total {
     display: block;
+}
+
+ul {
+    color: black;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.wrong {
+    border: 1px solid;
+    height: 160px;
+    border-color: #8a0303;
+    background-color: #ffe0e0;
+    color: #8a0303;
+    padding: 5px 15px;
+    margin: 0px 40px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+.correct {
+    border: 1px solid;
+    height: 160px;
+    border-color: #004201;
+    background-color: #e0ffe8;
+    color: #004201;
+    padding: 5px 15px;
+    margin: 0px 40px;
+    align-items: center;
+    box-sizing: content-box;
 }
 
 /*********************************************************************

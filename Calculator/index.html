@@ -11,79 +11,517 @@
   </head>
 
   <body>
-    <h3>Stoop or buy?</h3>
     <div class="container">
-      <select class="" name="">
-        <option>Monstera Plant</option>
-        <option>Couch</option>
-        <option>Table</option>
-        <option>Stool</option>
-        <option>Desk Chair</option>
-        <option>Wine Rack</option>
-      </select>
-    </div>
-    <div class="calc-container">
+
+      <h3>Stoop or buy?</h3>
+      <p style="border:1px; border-style:solid; border-color:black; padding: 1em; margin:0px 5px 15px 5px; background-color:#f9f9f9;">
+        Guess which item was stooped and which was bought below.</p>
       <div class="container">
-        <div class="calculator">
-          <div class="row">
-            <div class="item">
+        <select class="filter">
+          <option value="plant">Monstera Plant</option>
+          <option value="couch">Couch</option>
+          <option value="table">Table</option>
+          <option value="stool">Stool</option>
+          <option value="chair">Desk Chair</option>
+          <option value="rack">Wine Rack</option>
+        </select>
+      </div>
+
+      <div class="calc-container plant">
+        <div class="container">
+          <div class="calculator">
+            <div class="row plant item">
               <a href="https://www.amazon.com/AMERICAN-Philodendron-Monstera-Deliciosa-Plant/dp/B08H2DR4MW/ref=sr_1_2_sspa?dchild=1&keywords=house+plant+monstera&qid=1618963924&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzUVdCREhKTVZZVlFEJmVuY3J5cHRlZElkPUEwNTIwNzAwQ1dZS1VKMUtaQjVZJmVuY3J5cHRlZEFkSWQ9QTA5MDUyMDYyT0FDODlUTENUQ0tIJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
-                target="-_blank" rel="noreferrer noopener"><img src="img/amazon/aplant.png" alt=""></a>
+                target="-_blank" rel="noreferrer noopener">
+                <img src="img/amazon/aplant.png" alt=""></a>
               <input type="radio" name="plant" value="amazon">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Amazon</li>
+                  <li>Price: $29.99</li>
+                  <li>Height: 18-20"</li>
+                  <li>Real</li>
+                </ul>
+              </div>
             </div>
-            <div class="total">
-              <strong>Amazon</strong> $29.99 (Real)
-            </div>
-          </div>
-          <div class="row">
-            <div class="item">
-              <a href="https://www.ikea.com/us/en/p/fejka-artificial-potted-plant-indoor-outdoor-monstera-40395288/" target="_blank" rel="noreferrer noopener"><img src="img/IKEA/iplant.png" alt=""></a>
+            <div class="row plant item">
+              <a href="https://www.ikea.com/us/en/p/fejka-artificial-potted-plant-indoor-outdoor-monstera-40395288/" target="_blank" rel="noreferrer noopener">
+                <img src="img/IKEA/iplant.png" alt=""></a>
               <input type="radio" name="plant" value="ikea">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: IKEA</li>
+                  <li>Price: $39.99</li>
+                  <li>Height: 13.4"</li>
+                  <li>Artifical</li>
+                </ul>
+              </div>
             </div>
-            <div class="total">
-              <strong>IKEA</strong> $39.99 (Artificial)
-            </div>
-          </div>
-          <div class="row">
-            <div class="item">
+            <div class="row plant item">
               <a href="https://www.wayfair.com/decor-pillows/pdp/bay-isle-home-monstera-foliage-plant-in-pot-w001849188.html" target="_blank" rel="noreferrer noopener"><img src="img/wayfair/wfplant.png" alt=""></a>
               <input type="radio" name="plant" value="wayfair">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Wayfair</li>
+                  <li>Price: $45.99</li>
+                  <li>Height: 7.5"</li>
+                  <li>Artifical</li>
+                </ul>
+              </div>
             </div>
-            <div class="total">
-              <strong>Way Fair</strong> $45.99 (Artificial)
-            </div>
-          </div>
-          <div class="row">
-            <div class="item">
+            <div class="row plant item">
               <a href="https://www.ashleyfurniture.com/p/artificial_monstera_plant_in_a_plastic_pot_small/A600023174.html#q=house+plant&start=14" target="_blank" rel="noreferrer noopener"><img src="img/ashley/ahplant.png" alt=""></a>
               <input type="radio" name="plant" value="ashley">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Ashley Furniture HomeStore</li>
+                  <li>Price: $126.99</li>
+                  <li>Height: 14"</li>
+                  <li>Artificial</li>
+                </ul>
+              </div>
             </div>
-            <div class="total">
-              <strong>Ashley Furniture</strong> $126.99 (Artificial)
-            </div>
-          </div>
-          <div class="row">
-            <div class="item">
+            <div class="row plant item">
               <a href="https://www.walmart.com/ip/Monstera-Swiss-Cheese-Plant-Cannot-Ship-to-AZ/845374243?wpa_bd=&wpa_pg_seller_id=90D5B45D67484B51BBFA0FDA590E2E68&wpa_ref_id=wpaqs:EDFUh3YqM2ybk0cea2uojtBNTb2lyajTKwrEkmzF5uJb_QkASZpfBMPogSK5NIIXMtxx2NP-XsQZxQGs622j5dNVUSagZnsuCDoRweIod3Zh7UHdomQ-ufjyEQMrT_R2FR1pIJzx8NKRXUdcALlb8Wxg-C0XGSaWl9HwVXKyEGjc6WKbBcgGZFE2kceyEUGplNjY_3WoYkVJIUxhnI3EXQ&wpa_tag=&wpa_aux_info=&wpa_pos=1&wpa_plmt=1145x1145_T-C-IG_TI_1-6_HL-INGRID-LIST-NY&wpa_aduid=68029c6b-9086-4262-960a-16fb8e203b46&wpa_pg=search&wpa_pg_id=monstera&wpa_st=monstera&wpa_tax=5428_4091_6061364_2246979&wpa_bucket=__bkt__"
                 target="_blank" rel="noreferrer noopener"> <img src="img/walmart/wplant.png" alt="">
+                <input type="radio" name="plant" value="walmart">
               </a>
-              <input type="radio" name="plant" value="walmart">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Walmart</li>
+                  <li>Price: $39.99</li>
+                  <li>Height: 14"</li>
+                  <li>Real</li>
+                </ul>
+              </div>
             </div>
-            <div class="total">
-              <strong>Walmart</strong> $49.99 (Real)
-            </div>
-          </div>
-          <div class="row">
-            <div class="item">
+            <div class="row plant item">
               <img src="img/stooped/splants.png" alt="">
               <input type="radio" name="plant" value="stooped">
-            </div>
-            <div class="total">
-              <strong>Stooped</strong> Free (Real and Artificial)
+              <div class="total correct">
+                <p><strong>CORRECT</strong></p>
+                <ul>
+                  <li>Store: Stooped</li>
+                  <li>Price: Free</li>
+                  <li>Height: Various</li>
+                  <li>Real and Artifical</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="calc-container couch">
+        <div class="container">
+          <div class="calculator">
+            <div class="row couch item">
+              <a href="https://www.amazon.com/Casa-Andrea-Milano-llc-Sectional/dp/B092Q72KWT/ref=sr_1_1_sspa?dchild=1&keywords=couch&qid=1618964418&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWEVCWVhGRDRDM1BCJmVuY3J5cHRlZElkPUEwMDI4MzczMVZHSTNGTVVIMTIzVyZlbmNyeXB0ZWRBZElkPUEwMTk3MTE5MVAwVkpYUzdWTENHSyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
+                target="-_blank" rel="noreferrer noopener"><img src="img/amazon/acouch.png" alt=""></a>
+              <input type="radio" name="couch" value="amazon">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Amazon</li>
+                  <li>Price: $475.84</li>
+                  <li>Width: </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row couch item">
+              <a href="https://www.ikea.com/us/en/p/brathult-sectional-3-seat-corner-borred-gray-green-s79217822/" target="_blank" rel="noreferrer noopener">
+                <img src="img/IKEA/icouch.png" alt=""></a>
+              <input type="radio" name="couch" value="ikea">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: IKEA</li>
+                  <li>Price: $399.00</li>
+                  <li>Width: </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row couch item">
+              <a href="https://www.wayfair.com/furniture/pdp/george-oliver-93-wide-right-hand-facing-sofa-chaise-w004955491.html" target="_blank" rel="noreferrer noopener">
+                <img src="img/wayfair/wfcouch.png" alt=""></a>
+              <input type="radio" name="couch" value="wayfair">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Wayfair</li>
+                  <li>Price: $699.00</li>
+                  <li>Width: </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row couch item">
+              <a href="https://www.ashleyfurniture.com/p/artificial_monstera_plant_in_a_plastic_pot_small/A600023174.html#q=house+plant&start=14" target="_blank" rel="noreferrer noopener">
+                <img src="img/ashley/ahcouch.png" alt=""></a>
+              <input type="radio" name="couch" value="ashley">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Ashley Furniture HomeStore</li>
+                  <li>Price: $1224.99</li>
+                  <li>Width: </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row couch item">
+              <a href="https://www.walmart.com/ip/Mobilis-Modern-Reversible-Small-Space-Configurable-Microfiber-Sectional-Grey/539576867" target="_blank" rel="noreferrer noopener">
+                <img src="img/walmart/wcouch.png" alt="">
+                <input type="radio" name="couch" value="walmart">
+              </a>
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Walmart</li>
+                  <li>Price: $39.99</li>
+                  <li>Height: 14"</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row couch item">
+              <img src="img/stooped/scouch.png" alt="">
+              <input type="radio" name="couch" value="stooped">
+              <div class="total correct">
+                <p><strong>CORRECT</strong></p>
+                <ul>
+                  <li>Store: Stooped</li>
+                  <li>Price: Free</li>
+                  <li>Width: Various</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-container table">
+        <div class="container">
+          <div class="calculator">
+            <div class="row table item">
+              <a href="https://www.amazon.com/Table-Snack-Couch-Living-Office/dp/B07D6NNTCN/ref=sr_1_omk_6?dchild=1&keywords=side+table&qid=1619017413&sr=8-6" target="-_blank" rel="noreferrer noopener">
+                <img src="img/amazon/atable.png" alt=""></a>
+              <input type="radio" name="table" value="amazon">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Amazon</li>
+                  <li>Price: $39.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row table item">
+              <a href="https://www.ikea.com/us/en/p/lunnarp-side-table-white-70399020/" target="_blank" rel="noreferrer noopener">
+                <img src="img/IKEA/itable.png" alt=""></a>
+              <input type="radio" name="table" value="ikea">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: IKEA</li>
+                  <li>Price: $39.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row table item">
+              <a href="https://www.wayfair.com/furniture/pdp/brayden-studio-ashwood-c-end-table-w002921116.html" target="_blank" rel="noreferrer noopener">
+                <img src="img/wayfair/wftable.png" alt=""></a>
+              <input type="radio" name="table" value="wayfair">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Wayfair</li>
+                  <li>Price: $55.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row table item">
+              <a href="https://www.ashleyfurniture.com/p/skyler__18_industrial_c_side_table/T600000570.html#q=c+side+table&start=4" target="_blank" rel="noreferrer noopener">
+                <img src="img/ashley/ahtable.png" alt=""></a>
+              <input type="radio" name="table" value="ashley">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Ashley Furniture HomeStore</li>
+                  <li>Price: $284.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row table item">
+              <a href="https://www.walmart.com/ip/Mainstays-C-Shape-Metal-End-Table-Espresso-Black/385889398" target="_blank" rel="noreferrer noopener">
+                <img src="img/walmart/wtable.png" alt="">
+                <input type="radio" name="table" value="walmart">
+              </a>
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Walmart</li>
+                  <li>Price: $22.96</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row table item">
+              <img src="img/stooped/stable.png" alt="">
+              <input type="radio" name="table" value="stooped">
+              <div class="total correct">
+                <p><strong>CORRECT</strong></p>
+                <ul>
+                  <li>Store: Stooped</li>
+                  <li>Price: Free</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-container stool">
+        <div class="container">
+          <div class="calculator">
+            <div class="row stool item">
+              <a href="https://www.amazon.com/Ravenna-Home-Barstool-Swivel-Slate/dp/B07QGWNJB3/ref=sr_1_15_sspa?dchild=1&keywords=bar+stool&qid=1618965485&sr=8-15-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWUswVk5SOFM2RzRNJmVuY3J5cHRlZElkPUEwNTgwMzgwMlU5VDZHMkxHNjhSRCZlbmNyeXB0ZWRBZElkPUEwOTU2Nzc5MVo1S1BWWDkwSkwwTSZ3aWRnZXROYW1lPXNwX210ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
+                target="-_blank" rel="noreferrer noopener">
+                <img src="img/amazon/astool.png" alt=""></a>
+              <input type="radio" name="stool" value="amazon">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Amazon</li>
+                  <li>Price: $115.87</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row stool item">
+              <a href="https://www.ikea.com/us/en/p/skogsta-stool-acacia-10297958/" target="_blank" rel="noreferrer noopener">
+                <img src="img/IKEA/istool.png" alt=""></a>
+              <input type="radio" name="stool" value="ikea">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: IKEA</li>
+                  <li>Price: $24.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row stool item">
+              <a href="https://www.wayfair.com/furniture/pdp/trent-austin-design-lompoc-bar-counter-stool-w002988153.html" target="_blank" rel="noreferrer noopener">
+                <img src="img/wayfair/wfstool.png" alt=""></a>
+              <input type="radio" name="stool" value="wayfair">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Wayfair</li>
+                  <li>Price: $88.63</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row stool item">
+              <a href="https://www.ashleyfurniture.com/p/realyn_counter_height_bar_stool/D743-024.html#q=stool&start=5" target="_blank" rel="noreferrer noopener">
+                <img src="img/ashley/ahstool.png" alt=""></a>
+              <input type="radio" name="stool" value="ashley">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Ashley Furniture HomeStore</li>
+                  <li>Price: $140.00</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row stool item">
+              <a href="https://www.walmart.com/ip/Mainstays-Fully-Assembled-24-Natural-Wood-Backless-Bar-Stool/37523874" target="_blank" rel="noreferrer noopener">
+                <img src="img/walmart/wstool.png" alt="">
+                <input type="radio" name="stool" value="walmart">
+              </a>
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Walmart</li>
+                  <li>Price: $25.96</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row stool item">
+              <img src="img/stooped/sstool.png" alt="">
+              <input type="radio" name="stool" value="stooped">
+              <div class="total correct">
+                <p><strong>CORRECT</strong></p>
+                <ul>
+                  <li>Store: Stooped</li>
+                  <li>Price: Free</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-container chair">
+        <div class="container">
+          <div class="calculator">
+            <div class="row chair item">
+              <a href="https://www.amazon.com/SMUGDESK-Ergonomic-Office-Swivel-Computer/dp/B088TDDJRF/ref=sr_1_8?dchild=1&keywords=desk+chair&qid=1618965096&sr=8-8" target="-_blank" rel="noreferrer noopener">
+                <img src="img/amazon/achair.png" alt=""></a>
+              <input type="radio" name="chair" value="amazon">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Amazon</li>
+                  <li>Price: $76.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row chair item">
+              <a href="https://www.ikea.com/us/en/p/renberget-swivel-chair-bomstad-black-50332238/" target="_blank" rel="noreferrer noopener">
+                <img src="img/IKEA/ichair.png" alt=""></a>
+              <input type="radio" name="chair" value="ikea">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: IKEA</li>
+                  <li>Price: $49.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row chair item">
+              <a href="https://www.wayfair.com/furniture/pdp/inbox-zero-barron-task-chair-w004817452.html" target="_blank" rel="noreferrer noopener">
+                <img src="img/wayfair/wfchair.png" alt=""></a>
+              <input type="radio" name="chair" value="wayfair">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Wayfair</li>
+                  <li>Price: $55.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row chair item">
+              <a href="https://www.ashleyfurniture.com/p/baraga_home_office_desk_chair/H410-01A.html#q=desk+chair&start=14" target="_blank" rel="noreferrer noopener">
+                <img src="img/ashley/ahchair.png" alt=""></a>
+              <input type="radio" name="chair" value="ashley">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Ashley Furniture HomeStore</li>
+                  <li>Price: $169.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row chair item">
+              <a href="https://www.walmart.com/ip/Easyfashion-Mid-Back-Mesh-Office-Chair-Ergonomic-Computer-Chair-Black/947922446" target="_blank" rel="noreferrer noopener">
+                <img src="img/walmart/wchair.png" alt="">
+                <input type="radio" name="chair" value="walmart">
+              </a>
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Walmart</li>
+                  <li>Price: $52.00</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row chair item">
+              <img src="img/stooped/schair.png" alt="">
+              <input type="radio" name="chair" value="stooped">
+              <div class="total correct">
+                <p><strong>CORRECT</strong></p>
+                <ul>
+                  <li>Store: Stooped</li>
+                  <li>Price: Free</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-container rack">
+        <div class="container">
+          <div class="calculator">
+            <div class="row rack item">
+              <a href="https://www.amazon.com/Homeva-Durable-Storage-Cabinet-Countertop/dp/B08T8YBLPH/ref=sr_1_4_sspa?dchild=1&keywords=wine+rack&qid=1619018016&sr=8-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQk9UTUNUUjBCNk5BJmVuY3J5cHRlZElkPUEwMTY1NzUyMzdNNjVBTDg1NEMxOSZlbmNyeXB0ZWRBZElkPUEwMjExOTAzMzRNVkYxTkJYMFZYQiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
+                target="-_blank" rel="noreferrer noopener">
+                <img src="img/amazon/awinerack.png" alt=""></a>
+              <input type="radio" name="rack" value="amazon">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Amazon</li>
+                  <li>Price: $27.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row rack item">
+              <a href="https://www.ikea.com/us/en/p/hutten-9-bottle-wine-rack-solid-wood-70032451/" target="_blank" rel="noreferrer noopener">
+                <img src="img/IKEA/iwinerack.png" alt=""></a>
+              <input type="radio" name="rack" value="ikea">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: IKEA</li>
+                  <li>Price: $9.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row rack item">
+              <a href="https://www.wayfair.com/kitchen-tabletop/pdp/gracie-oaks-selman-4-bottle-solid-wood-tabletop-wine-bottle-glass-rack-in-torched-brown-w004542983.html" target="_blank" rel="noreferrer noopener">
+                <img src="img/wayfair/wfwinerack.png" alt=""></a>
+              <input type="radio" name="rack" value="wayfair">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Wayfair</li>
+                  <li>Price: $51.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row rack item">
+              <a href="https://www.ashleyfurniture.com/p/swanson_rustic_industrial_style_antique_black_textured_metal_distressed_oak_finished_wood_mobile_kitchen_bar_wine_cart/D600002701.html#q=wine+rack&start=6" target="_blank"
+                rel="noreferrer noopener">
+                <img src="img/ashley/ahwinerack.png" alt=""></a>
+              <input type="radio" name="rack" value="ashley">
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Ashley Furniture HomeStore</li>
+                  <li>Price: $303.99</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row rack item">
+              <a href="https://www.walmart.com/ip/Wine-Rack-Wood-Storage-Racks-Countertop-10-Bottle-Wooden-Stackable-Cellar-Racks-Foldable-Tabletop-Free-Standing-Stand-Holder-Display-Shelf-Home-Kitch/673981082" target="_blank"
+                rel="noreferrer noopener">
+                <img src="img/walmart/wwinerack.png" alt="">
+                <input type="radio" name="rack" value="walmart">
+              </a>
+              <div class="total wrong">
+                <p><strong>WRONG</strong></p>
+                <ul>
+                  <li>Store: Walmart</li>
+                  <li>Price: $25.95</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row rack item">
+              <img src="img/stooped/swinerack.png" alt="">
+              <input type="radio" name="rack" value="stooped">
+              <div class="total correct">
+                <p><strong>CORRECT</strong></p>
+                <ul>
+                  <li>Store: Stooped</li>
+                  <li>Price: Free</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <script src="main.js"></script>
