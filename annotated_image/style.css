@@ -42,25 +42,6 @@ img {
     padding: 5px;
 }
 
-.collage {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.collage .img {
-    flex-basis: 50%;
-    padding: 2.5px;
-}
-
-.collage .img:nth-child(odd) {
-    padding-left: 0;
-}
-
-.collage .img:nth-child(even) {
-    padding-right: 0;
-}
-
 .annotate {
     position: relative;
 }
@@ -94,20 +75,36 @@ img {
     opacity: 0;
 }
 
-.annotate .dot.red {
-    background-color: rgba(230, 11, 65, 0.65);
+.annotate .dot.purple {
+    background-color: rgba(74, 2, 242, 0.65);
 }
 
 .annotate .dot.pink {
     background-color: rgba(240, 12, 182, 0.65);
 }
 
-.annotate .dot.purple {
-    background-color: rgba(74, 2, 242, 0.65);
+.annotate .dot.red {
+    background-color: rgba(230, 11, 65, 0.65);
 }
 
 .annotate .dot.blue {
     background-color: rgba(11, 18, 230, 0.65);
+}
+
+.annotate .dot.green {
+    background-color: rgba(71, 195, 34, 0.65);
+}
+
+.annotate .dot.orange {
+    background-color: rgba(237, 72, 12, 0.65);
+}
+
+.annotate .dot.yellow {
+    background-color: rgba(237, 184, 12, 0.65);
+}
+
+.annotate .dot.lblue {
+    background-color: rgba(12, 177, 237, 0.65);
 }
 
 .annotate .dot.active {
@@ -126,24 +123,44 @@ img {
     transition: opacity 0.5s ease-in-out;
 }
 
-#firstcheckpoint:not(.active) {
-    top: 27%;
+#coffeetable:not(.active) {
+    top: 60%;
     right: 62%;
 }
 
-#secondcheckpoint:not(.active) {
-    top: 30%;
-    left: 60%;
+#tvstand:not(.active) {
+    top: 59%;
+    left: 74%;
 }
 
-#thirdcheckpoint:not(.active) {
-    bottom: 20%;
-    right: 68%;
+#bookshelf:not(.active) {
+    bottom: 69%;
+    right: 82%;
 }
 
-#fourthcheckpoint:not(.active) {
-    bottom: 17%;
-    left: 77%;
+#mirror:not(.active) {
+    bottom: 59%;
+    left: 66%;
+}
+
+#pictures:not(.active) {
+    top: 19%;
+    right: 14%;
+}
+
+#lamp:not(.active) {
+    top: 28%;
+    right: 22%;
+}
+
+#printertable:not(.active) {
+    bottom: 16%;
+    right: 1%;
+}
+
+#desk:not(.active) {
+    top: 40%;
+    left: 50%;
 }
 
 .sources {
