@@ -169,7 +169,7 @@ figcaption {
 }
 
 #coffeetable:not(.active) {
-    top: 60%;
+    top: 57%;
     right: 62%;
 }
 
@@ -179,33 +179,33 @@ figcaption {
 }
 
 #bookshelf:not(.active) {
-    bottom: 69%;
+    bottom: 64%;
     right: 82%;
 }
 
 #mirror:not(.active) {
-    bottom: 59%;
-    left: 66%;
+    bottom: 52%;
+    left: 63%;
 }
 
 #pictures:not(.active) {
-    top: 19%;
-    right: 14%;
+    top: 4%;
+    right: 10%;
 }
 
 #lamp:not(.active) {
-    top: 28%;
-    right: 22%;
+    top: 24%;
+    right: 18%;
 }
 
 #printertable:not(.active) {
-    bottom: 16%;
+    bottom: 11%;
     right: 1%;
 }
 
 #desk:not(.active) {
-    top: 40%;
-    left: 50%;
+    top: 36%;
+    left: 48%;
 }
 
 /** Container styles to keep content from becoming too wide or coming too close to
@@ -237,8 +237,43 @@ figcaption {
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    #coffeetable:not(.active) {
+        top: 60%;
+        right: 62%;
+    }
+
+    #bookshelf:not(.active) {
+        bottom: 69%;
+        right: 85%;
+    }
+
+    #mirror:not(.active) {
+        bottom: 59%;
+        left: 66%;
+    }
+
+    #pictures:not(.active) {
+        top: 19%;
+        right: 14%;
+    }
+
+    #lamp:not(.active) {
+        top: 28%;
+        right: 22%;
+    }
+
+    #printertable:not(.active) {
+        bottom: 16%;
+        right: 1%;
+    }
+
+    #desk:not(.active) {
+        top: 40%;
+        left: 50%;
+    }
 }
 
 /*********************************************************************
