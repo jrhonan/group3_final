@@ -1,33 +1,18 @@
-*
-This is a good layout for a mobile-first CSS template.
-Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
-Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
-
-Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
-You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
-*/
-
-
+* This is a good layout for a mobile-first CSS template. Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first. Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens. Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query. You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device. */
 /*********************************************************************
  LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
 *********************************************************************/
-
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
 
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
-
-
 /** SET BORDER BOX EVERYWHERE */
-
 * {
     box-sizing: border-box;
 }
 
-
 /** APPLY BASE TAG STYLES */
-
 body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
@@ -39,14 +24,11 @@ body {
     background-color: #E8FCFC;
 }
 
-
 /** RESPONSIVE IMAGES */
-
 figure,
 img {
     /* Sets image width to match parent */
     width: 100%;
-
     margin: 0 auto;
 }
 
@@ -96,9 +78,7 @@ header p {
     padding-right: 0;
 }
 
-
 /** Caption styles */
-
 .caption,
 figcaption {
     font-size: 0.9rem;
@@ -106,11 +86,7 @@ figcaption {
     padding: 5px 0;
 }
 
-
-
-
 /** BASE CLASSES */
-
 .annotate {
     position: relative;
 }
@@ -144,12 +120,12 @@ figcaption {
     opacity: 0;
 }
 
-.annotate .dot.green {
-    background-color: rgba(0, 110, 65, 0.65);
-}
-
 .annotate .dot.purple {
     background-color: rgba(74, 2, 242, 0.65);
+}
+
+.annotate .dot.pink {
+    background-color: rgba(240, 12, 182, 0.65);
 }
 
 .annotate .dot.red {
@@ -160,8 +136,20 @@ figcaption {
     background-color: rgba(11, 18, 230, 0.65);
 }
 
-.annotate .dot.pink {
-    background-color: rgba(240, 12, 182, 0.65);
+.annotate .dot.green {
+    background-color: rgba(71, 195, 34, 0.65);
+}
+
+.annotate .dot.orange {
+    background-color: rgba(237, 72, 12, 0.65);
+}
+
+.annotate .dot.yellow {
+    background-color: rgba(255, 128, 0, 0.65);
+}
+
+.annotate .dot.lblue {
+    background-color: rgba(12, 177, 237, 0.65);
 }
 
 .annotate .dot.active {
@@ -174,41 +162,54 @@ figcaption {
     z-index: 2;
 }
 
-.annotate .dot.active .inner,
-.annotate .dot.active .close {
+.annotate .dot.active .close,
+.annotate .dot.active .inner {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
-#knob:not(.active) {
-    top: 50%;
-    left: 4%;
+#coffeetable:not(.active) {
+    top: 60%;
+    right: 62%;
 }
 
-#strings:not(.active) {
-    bottom: 8%;
-    left: 28%;
+#tvstand:not(.active) {
+    top: 59%;
+    left: 74%;
 }
 
-#mallet:not(.active) {
-    bottom: 23%;
-    left: 32%;
+#bookshelf:not(.active) {
+    bottom: 69%;
+    right: 82%;
 }
 
-#Adam:not(.active) {
-    bottom: 55%;
-    right: 16%;
+#mirror:not(.active) {
+    bottom: 59%;
+    left: 66%;
 }
 
-#tuning:not(.active) {
-    bottom: 10%;
-    right: 80%;
+#pictures:not(.active) {
+    top: 19%;
+    right: 14%;
 }
 
+#lamp:not(.active) {
+    top: 28%;
+    right: 22%;
+}
+
+#printertable:not(.active) {
+    bottom: 16%;
+    right: 1%;
+}
+
+#desk:not(.active) {
+    top: 40%;
+    left: 50%;
+}
 
 /** Container styles to keep content from becoming too wide or coming too close to
 * mobile edge */
-
 .container {
     width: 100%;
     max-width: 800px;
@@ -216,12 +217,15 @@ figcaption {
     margin: 0 auto;
 }
 
-
 /** Images are allowed to be a little wider when broken out into their own container */
-
 .container.image {
     max-width: 1200px;
     padding: 0;
+}
+
+.container.photo {
+    max-width: 1000px;
+    padding: 5px;
 }
 
 .container.image .caption,
@@ -229,52 +233,27 @@ figcaption {
     padding: 5px 10px;
 }
 
-
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-
 @media(min-width: 681px) {
-    #tuning:not(.active) {
-        bottom: 11%;
-        right: 80%;
-    }
-    #strings:not(.active) {
-        bottom: 4%;
-        left: 37%;
-    }
-    #Adam:not(.active) {
-        bottom: 57%;
-        right: 18%;
-    }
-    #knob:not(.active) {
-        top: 52%;
-        left: 7%;
-    }
-    #mallet:not(.active) {
-        bottom: 26%;
-        left: 33%;
-    }
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 }
 
-
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-
 @media(min-width: 769px) {
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
 }
 
-
 /*********************************************************************
   YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-
 @media(min-width: 805px) {
+
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
     .container {
@@ -282,12 +261,11 @@ figcaption {
     }
 }
 
-
 /*********************************************************************
   YOUR LARGE DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-
 @media(min-width: 1205px) {
+
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 769px or larger -- so desktop */
     .container.image .caption,
