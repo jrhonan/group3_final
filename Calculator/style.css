@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-color: #F2FFEA;
+    background-color: #E8FCFC;
 }
 
 a {
@@ -41,7 +41,6 @@ a {
 
 img {
     width: 100%;
-    display: block;
     margin: 0 auto;
 }
 
@@ -56,15 +55,15 @@ img {
     margin: 0 auto;
 }
 
-.container.image {
-    max-width: 1200px;
-    padding: 0;
+.calculator {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .calculator .row {
-    margin-bottom: 20px;
-    flex-basis: 50%;
-    flex: 1;
+    margin-bottom: 10px;
+    flex-basis: 48%;
 }
 
 .calculator .row .item img {
@@ -88,32 +87,35 @@ ul {
     color: black;
     justify-content: center;
     list-style-type: none;
-    padding-left: 15px;
+    padding: 0 15px;
 }
 
 .wrong {
     border: 1px solid;
-    height: 160px;
+    height: 90px;
     border-color: #8a0303;
     background-color: #ffe0e0;
     color: #8a0303;
-    padding: 5px 15px;
-    margin: 0px 40px;
+    padding: 2px 2px;
+    margin: 0px 10px;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     box-sizing: content-box;
+    font-size: 11px;
 }
 
 .correct {
     border: 1px solid;
-    height: 160px;
+    height: 90px;
     border-color: #004201;
     background-color: #e0ffe8;
     color: #004201;
-    padding: 5px 15px;
-    margin: 0px 40px;
+    padding: 2px 2px;
+    margin: 0px 10px;
     align-items: center;
+    text-align: center;
     box-sizing: content-box;
+    font-size: 11px;
 }
 
 /*********************************************************************
@@ -140,6 +142,20 @@ ul {
 
     .item {
         max-width: 341px;
+    }
+
+    .wrong {
+        font-size: 16px;
+        height: 160px;
+        padding: 5px 15px;
+        margin: 0px 40px;
+    }
+
+    .correct {
+        font-size: 16px;
+        height: 160px;
+        padding: 5px 15px;
+        margin: 0px 40px;
     }
 }
 
